@@ -1,14 +1,268 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Web App</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="script.js" defer></script>
+    <title>Valoración de la fuerza muscular</title>
+    <script src="script.js"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
+
 <body>
-<p>TEST commit</p>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Hormigakraken</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class=" nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Ejercicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Valoraciones</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contactar</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <table align="center" class="table table-striped table-list table-bordered" style="width: 100%">
+            <tbody align="center">
+                <tr>
+                    <td colspan="3" width="157">
+                        <p>Ejercicio:</p>
+                    </td>
+                    <td colspan="5" width="383">
+                        <p>Press de banca plano con mancuernas</p>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td colspan="4" width="593">
+                        <p>Test de fuerza m&aacute;xima indirecta 1RM</p>
+                    </td>
+                    <td width="157">
+                        <p>Sexo</p>
+                    </td>
+                    <td colspan="3" width="383">
+                        <select class="form-select" name="sexo" id="sexo">
+                            <option selected>Selecciona tu opción</option>
+                            <option value="hombre">Hombre</option>
+                            <option value="mujer">Mujer</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <!-- <img src="https://fitcron.com/wp-content/uploads/2021/04/17431301-Dumbbell-Twisting-Bench-Press_Upper-Arms_720.gif"
+                            alt="" style="width: 250px;"> -->
+                    </td>
+                    <td width="155">
+                        <p>%Trabajo asignado seg&uacute;n Hoeger</p>
+                    </td>
+                    <td width="145">
+                        <p>65%</p>
+                    </td>
+                    <td width="127">
+                        <p>PC (kg)</p>
+                    </td>
+                    <td colspan="2" rowspan="2" width="280">
+                        <p>70-80%<br /> RM</p>
+                    </td>
+                    <td colspan="2" rowspan="2" width="260">
+                        <p>85-90% RM</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td rowspan="9" width="167">
+                        <p></p>
+                    </td>
+                    <td width="155">
+                        <p>Masa calculada(kg)</p>
+                    </td>
+                    <td width="145">
+                        <p>65</p>
+                    </td>
+                    <td width="127">
+                        <p>100</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="155">
+                        <p>Peso utilizado</p>
+                    </td>
+                    <td colspan="2" width="272">
+                        <p>50</p>
+                    </td>
+                    <td width="157">
+                        <p>Peso utilizado</p>
+                    </td>
+                    <td width="123">
+                        <p>57</p>
+                    </td>
+                    <td width="123">
+                        <p>Peso utilizado</p>
+                    </td>
+                    <td width="137">
+                        <p>58</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="155">
+                        <p>Repeticiones 12-15</p>
+                    </td>
+                    <td colspan="2" width="272">
+                        <p>13</p>
+                    </td>
+                    <td width="157">
+                        <p>Repeticiones 3-5</p>
+                    </td>
+                    <td width="123">
+                        <p>4</p>
+                    </td>
+                    <td width="123">
+                        <p>Repeticiones 2</p>
+                    </td>
+                    <td width="137">
+                        <p>2</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="155">
+                        <p>RPE</p>
+                    </td>
+                    <td colspan="2" width="272">
+                        <p>7</p>
+                    </td>
+                    <td width="157">
+                        <p>RPE</p>
+                    </td>
+                    <td width="123">
+                        <p>9</p>
+                    </td>
+                    <td width="123">
+                        <p>RPE</p>
+                    </td>
+                    <td width="137">
+                        <p>10</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="155">
+                        <p># de rep proyectadas</p>
+                    </td>
+                    <td colspan="2" width="272">
+                        <p>16</p>
+                    </td>
+                    <td width="157">
+                        <p># de rep proyectadas</p>
+                    </td>
+                    <td width="123">
+                        <p>5</p>
+                    </td>
+                    <td width="123">
+                        <p># de repeticiones proyectadas</p>
+                    </td>
+                    <td width="137">
+                        <p>2</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="155">
+                        <p>Autor (seleccionar)</p>
+                    </td>
+                    <td colspan="2" width="272">
+                        <p>Mayhew et al.</p>
+                    </td>
+                    <td width="157">
+                        <p>Autor (seleccionar)</p>
+                    </td>
+                    <td width="123">
+                        <p>Brzycki</p>
+                    </td>
+                    <td width="123">
+                        <p>Autor (seleccionar)</p>
+                    </td>
+                    <td width="137">
+                        <p>Brzycki</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="155">
+                        <p>RM calculado</p>
+                    </td>
+                    <td colspan="2" width="272">
+                        <p>72</p>
+                    </td>
+                    <td width="157">
+                        <p>RM calculado</p>
+                    </td>
+                    <td width="123">
+                        <p>64</p>
+                    </td>
+                    <td width="123">
+                        <p>RM Calculado</p>
+                    </td>
+                    <td width="137">
+                        <p>60</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="155">
+                        <p>Peso siguiente serie&nbsp;</p>
+                    </td>
+                    <td colspan="2" width="272">
+                        <p>57</p>
+                    </td>
+                    <td width="157">
+                        <p>Peso siguiente serie (calculado en 90%)</p>
+                    </td>
+                    <td width="123">
+                        <p>58</p>
+                    </td>
+                    <td width="123">
+                        <p>Peso siguiente serie (calculado en 90%)</p>
+                    </td>
+                    <td width="137">
+                        <p>N/A</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="155">
+                        <p>Tiempo de recuperaci&oacute;n</p>
+                    </td>
+                    <td colspan="2" width="272">
+                        <p>1 minuto</p>
+                    </td>
+                    <td width="157">
+                        <p>Tiempo de recuperaci&oacute;n</p>
+                    </td>
+                    <td width="123">
+                        <p>2-3 minutos</p>
+                    </td>
+                    <td width="123">
+                        <p>Tiempo de recuperaci&oacute;n para pasar a otro ejercicio</p>
+                    </td>
+                    <td width="137">
+                        <p>2-5 minutos</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 </body>
 
 </html>
